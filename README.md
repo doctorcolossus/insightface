@@ -5,7 +5,7 @@
   <img src="https://insightface.ai/assets/img/custom/logo3.jpg" width="240"/>
 </div>
 
-InsightFace project is mainly maintained By [Jia Guo](mailto:guojia@gmail.com?subject=[GitHub]%20InsightFace%20Project) and [Jiankang Deng](https://jiankangdeng.github.io/). 
+The InsightFace project is mainly maintained By [Jia Guo](mailto:guojia@gmail.com?subject=[GitHub]%20InsightFace%20Project) and [Jiankang Deng](https://jiankangdeng.github.io/). 
 
 For all main contributors, please check [contributing](#contributing).
 
@@ -44,23 +44,23 @@ For all main contributors, please check [contributing](#contributing).
 
 ## License
 
-The code of InsightFace is released under the MIT License. There is no limitation for both academic and commercial usage.
+The code of InsightFace is released under the MIT License. There are no limitations for either academic and commercial usage.
 
-The training data containing the annotation (and the models trained with these data) are available for non-commercial research purposes only.
+The training data containing annotations (and the models trained with these data) are available for non-commercial research purposes only.
 
-Both manual-downloading models from our github repo and auto-downloading models with our [python-library](python-package) follow the above license policy(which is for non-commercial research purposes only).
+Both models downloaded manually from our github repo and models auto-downloaded with our [python-library](python-package) follow the above license policy (which is for non-commercial research purposes only).
 
 
 
 ## Introduction
 
-[InsightFace](https://insightface.ai) is an open source 2D&3D deep face analysis toolbox, mainly based on PyTorch and MXNet. 
+[InsightFace](https://insightface.ai) is an open-source 2D & 3D deep face analysis toolbox, mainly based on PyTorch and MXNet. 
 
 Please check our [website](https://insightface.ai) for detail.
 
 The master branch works with **PyTorch 1.6+** and/or **MXNet=1.6-1.8**, with **Python 3.x**.
 
-InsightFace efficiently implements a rich variety of state of the art algorithms of face recognition, face detection and face alignment, which optimized for both training and deployment.
+InsightFace efficiently implements a rich variety of state-of-the-art facial recognition, face detection and face alignment algorithms optimized for both training and deployment.
 
 ## Quick Start
 
@@ -79,9 +79,9 @@ Please click the image to watch the Youtube video. For Bilibili users, click [he
 
 ## Projects
 
-The [page](https://insightface.ai/projects) on InsightFace website also describes all supported projects in InsightFace.
+The [page](https://insightface.ai/projects) on the InsightFace website also describes all projects supported by InsightFace.
 
-You may also interested in some [challenges](https://insightface.ai/challenges) hold by InsightFace.
+You may also interested in some [challenges](https://insightface.ai/challenges) held by InsightFace.
 
 
 
@@ -89,7 +89,7 @@ You may also interested in some [challenges](https://insightface.ai/challenges) 
 
 ### Introduction
 
-In this module, we provide training data, network settings and loss designs for deep face recognition.
+In this module, we provide training data, network settings and loss designs for deep facial recognition.
 
 The supported methods are as follows:
 
@@ -102,12 +102,12 @@ The supported methods are as follows:
 - [x] [Arcface_oneflow](recognition/arcface_oneflow)
 - [x] [ArcFace_Paddle (CVPR'2019)](recognition/arcface_paddle)
 
-Commonly used network backbones are included in most of the methods, such as IResNet, MobilefaceNet, MobileNet, InceptionResNet_v2, DenseNet, etc..
+Most of the methods include commonly-used network backbones such as IResNet, MobilefaceNet, MobileNet, InceptionResNet_v2, DenseNet, etc.
 
 
 ### Datasets
 
-The training data includes, but not limited to the cleaned MS1M, VGG2 and CASIA-Webface datasets, which were already packed in MXNet binary format. Please [dataset](recognition/_datasets_) page for detail.
+The training data includes (but is not limited to) the cleaned MS1M, VGG2 and CASIA-Webface datasets, which were already packed in MXNet binary format. Please see the [datasets](recognition/_datasets_) page for details.
 
 ### Evaluation
 
@@ -116,7 +116,7 @@ We provide standard IJB and Megaface evaluation pipelines in [evaluation](recogn
 
 ### Pretrained Models
 
-**Please check [Model-Zoo](https://github.com/deepinsight/insightface/wiki/Model-Zoo) for more pretrained models.**
+**Please check the [model zoo](https://github.com/deepinsight/insightface/wiki/Model-Zoo) for more pretrained models.**
 
 ### Third-party Re-implementation of ArcFace
 
@@ -143,7 +143,7 @@ We provide standard IJB and Megaface evaluation pipelines in [evaluation](recogn
   <img src="https://insightface.ai/assets/img/github/11513D05.jpg" width="640"/>
 </div>
 
-In this module, we provide training data with annotation, network settings and loss designs for face detection training, evaluation and inference.
+In this module, we provide training data with annotations, network settings and loss designs for face detection training, evaluation and inference.
 
 The supported methods are as follows:
 
@@ -151,9 +151,9 @@ The supported methods are as follows:
 - [x] [SCRFD (Arxiv'2021)](detection/scrfd)
 - [x] [blazeface_paddle](detection/blazeface_paddle)
 
-[RetinaFace](detection/retinaface) is a practical single-stage face detector which is accepted by [CVPR 2020](https://openaccess.thecvf.com/content_CVPR_2020/html/Deng_RetinaFace_Single-Shot_Multi-Level_Face_Localisation_in_the_Wild_CVPR_2020_paper.html). We provide training code, training dataset, pretrained models and evaluation scripts. 
+[RetinaFace](detection/retinaface) is a practical single-stage face detector which is accepted by [CVPR 2020](https://openaccess.thecvf.com/content_CVPR_2020/html/Deng_RetinaFace_Single-Shot_Multi-Level_Face_Localisation_in_the_Wild_CVPR_2020_paper.html). We provide training code, a training dataset, pretrained models and evaluation scripts. 
 
-[SCRFD](detection/scrfd) is an efficient high accuracy face detection approach which is initialy described in [Arxiv](https://arxiv.org/abs/2105.04714). We provide an easy-to-use pipeline to train high efficiency face detectors with NAS supporting.
+[SCRFD](detection/scrfd) is an efficient high accuracy face detection approach which was initially described on [Arxiv](https://arxiv.org/abs/2105.04714). We provide an easy-to-use pipeline to train high-efficiency face detectors with NAS support.
 
 
 ## Face Alignment
@@ -172,14 +172,14 @@ Supported methods:
 - [x] [SimpleRegression](alignment/coordinate_reg)
 
 
-[SDUNets](alignment/heatmap) is a heatmap based method which accepted on [BMVC](http://bmvc2018.org/contents/papers/0051.pdf).
+[SDUNets](alignment/heatmap) is a heatmap-based method which was accepted at [BMVC](http://bmvc2018.org/contents/papers/0051.pdf).
 
-[SimpleRegression](alignment/coordinate_reg) provides very lightweight facial landmark models with fast coordinate regression. The input of these models is loose cropped face image while the output is the direct landmark coordinates.
+[SimpleRegression](alignment/coordinate_reg) provides very lightweight facial landmark models with fast coordinate regression. The input to these models is loose-cropped face imagery, while the output is the direct landmark coordinates.
 
 
 ## Citation
 
-If you find *InsightFace* useful in your research, please consider to cite the following related papers:
+If you find *InsightFace* useful in your research, please consider citing the following related papers:
 
 ```
 
